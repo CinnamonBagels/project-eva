@@ -81,7 +81,7 @@ public class Type88_LaserRifle : Weapon_Stats {
 
 				Debug.DrawLine( player.transform.position, hitPoint );
 			}
-			currentAmmo -= Time.deltaTime;
+			currentAmmo -= Time.deltaTime * 2;
 
 			if ( currentAmmo <= 0 ) {
 				hasAmmo = false;
